@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-[#7ebece]">
+    <div>
+      <div>
+        <div class="pt-10 pb-6">
+          <h2 class="text-4xl text-[#142a30] text-center font-mono select-none">
+            Stone
+          </h2>
+          <h2 class="text-2xl text-[#142a30] font-mono text-center select-none">
+            Paper
+          </h2>
+          <h2 class="text-5xl text-[#142a30] font-mono text-center select-none">
+            Scissors
+          </h2>
+        </div>
+        <div
+          class="bg-[#142a30] mx-auto w-[360px] h-[55px] flex items-center justify-center"
+        >
+          <p class="text-white text-base font-bold select-none">
+            &#43; &#43; &#43; &nbsp;
+          </p>
+          <h2 class="text-[#148275] font-sans font-bold text-4xl select-none">
+            SHOWDOWN
+          </h2>
+          <p class="text-white text-base font-bold select-none">
+            &nbsp; &#43; &#43; &#43;
+          </p>
+        </div>
+        <div
+          class="bg-[#142a30] mx-auto w-[340px] h-[45px] flex items-center justify-evenly my-3 text-white"
+        >
+          <p id="player-score" class="select-none">Player Score : 0</p>
+          <p class="select-none">|</p>
+          <p id="bot-score" class="select-none">Bot Score : 0</p>
+        </div>
+        <div
+          class="bg-[#142a30] w-[100vw] h-[120px] grid grid-cols-2 items-center justify-between"
+        >
+          <div
+            id="player"
+            class="h-[100px] flex flex-col items-center justify-evenly border-r border-white"
+          >
+            <img id="player-img" src="" class="h-[75px]" alt="" />
+            <p class="m-3 text-white select-none">Your choice</p>
+          </div>
+          <div
+            id="bot"
+            class="h-[100px] flex flex-col items-center justify-evenly border-l border-white"
+          >
+            <img id="bot-img" src="" class="h-[75px]" alt="" />
+            <p class="m-3 text-white select-none">Bot choice</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!--45c175 -->
+        <div
+          id="result"
+          class="h-[30px] w-full font-monos bg-[#c35246] my-6 flex items-center justify-center"
+        >
+          You Won!
+        </div>
+        <div id="selector" class="flex justify-evenly items-center my-6">
+          <button class="bg-transparent">
+            <img
+              id="stone-btn"
+              src="./resource/stone.png"
+              class="h-[100px] select-none"
+              alt="stone"
+            />
+          </button>
+          <button>
+            <img
+              id="paper-btn"
+              src="./resource/paper.png"
+              class="h-[100px] select-none"
+              alt="paper"
+            />
+          </button>
+          <button>
+            <img
+              id="scissors-btn"
+              src="./resource/scissors.png"
+              class="h-[100px] select-none"
+              alt="scissors"
+            />
+          </button>
+        </div>
+        <div class="flex items-center justify-center my-8">
+          <button
+            id="resetBtn"
+            class="text-2xl font-light text-[#148275] font-mono w-[105px] h-[45px] bg-[#142a30] rounded-3xl"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
